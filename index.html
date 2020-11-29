@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>AiEXO Control Page</title>
+
+</head>
+<body>
+<h1>AiEXO!</h1>
+
+<table>
+    <tr>
+        <td>
+            <form method="POST" action="#">
+                <p><input type="range" min="10" max="90" name="name_of_slider" value="{{content[2]}}"/>SR</p>
+                <p><input type="range" min="10" max="90" name="name_of_slider2" value="{{content[3]}}"/>SUA:</p>
+                <p><input type="range" min="10" max="90" name="name_of_slider3" value="{{content[4]}}"/>UAFA:</p>
+                <p><input type="range" min="10" max="90" name="name_of_slider4" value="{{content[5]}}"/>FAR</p>
+                <p><input type="range" min="10" max="90" name="name_of_slider5" value="{{content[6]}}"/>FAH</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider6" value="{{content[8]/10}}"/>Thumb</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider7" value="{{content[9]/10}}"/>ThumbRotate:</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider8" value="{{content[10]/10}}"/>Index:</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider9" value="{{content[11]/10}}"/>Middle:</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider10" value="{{content[12]/10}}"/>Ring:</p>
+                <p><input type="range" min="0" max="9" name="name_of_slider11" value="{{content[13]/10}}"/>Pinky</p>
+                <p><input type="submit" value="submit"/>
+                <p>
+            </form>
+        </td>
+        <td>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8  offset-lg-2">
+                        <h3 class="mt-5">Live Streaming</h3>
+                        <img src="{{ url_for('video_feed') }}" width="100%">
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
